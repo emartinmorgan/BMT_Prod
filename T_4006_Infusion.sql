@@ -1,0 +1,103 @@
+USE [BMT_Prod]
+GO
+
+/****** Object:  Table [dbo].[T_4006_Infusion]    Script Date: 6/29/2023 5:36:12 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[T_4006_Infusion](
+	[InfusionID] [int] IDENTITY(1,1) NOT NULL,
+	[upnx] [float] NULL,
+	[cupnx] [float] NULL,
+	[CUPN] [int] NULL,
+	[Name] [varchar](255) NULL,
+	[MRN] [int] NULL,
+	[CRID] [int] NULL,
+	[cellprod_id_chk] [bit] NULL,
+	[batch_num_chk] [bit] NULL,
+	[lot_num_chk] [bit] NULL,
+	[cellprod_id] [varchar](255) NULL,
+	[batch_num] [varchar](255) NULL,
+	[lot_num] [varchar](255) NULL,
+	[entire_prod] [nvarchar](50) NULL,
+	[prod_fate] [varchar](255) NULL,
+	[inf_route] [varchar](255) NULL,
+	[inf_site] [varchar](255) NULL,
+	[num_cells_knw] [nvarchar](50) NULL,
+	[num_cells_tot] [real] NULL,
+	[unit_cells_tot] [int] NULL,
+	[inf_cells_lymph] [bit] NULL,
+	[inf_cells_cd4] [bit] NULL,
+	[inf_cells_cd8] [bit] NULL,
+	[inf_cells_treg] [bit] NULL,
+	[inf_cells_card] [bit] NULL,
+	[inf_cells_dendvac] [bit] NULL,
+	[inf_cells_endo] [bit] NULL,
+	[inf_cells_hucpv] [bit] NULL,
+	[inf_cells_islet] [bit] NULL,
+	[inf_cells_mscs] [bit] NULL,
+	[inf_cells_nk] [bit] NULL,
+	[inf_cells_oligo] [bit] NULL,
+	[inf_cells_unspmono] [bit] NULL,
+	[inf_cells_oth] [bit] NULL,
+	[num_cells_lymph] [real] NULL,
+	[unit_cells_lymph] [int] NULL,
+	[num_cells_cd4] [real] NULL,
+	[unit_cells_cd4] [int] NULL,
+	[num_cells_cd8] [real] NULL,
+	[unit_cells_cd8] [int] NULL,
+	[num_cells_treg] [real] NULL,
+	[unit_cells_treg] [int] NULL,
+	[num_cells_card] [real] NULL,
+	[unit_cells_card] [int] NULL,
+	[num_cells_dendvac] [real] NULL,
+	[unit_cells_dendvac] [int] NULL,
+	[num_cells_endo] [real] NULL,
+	[unit_cells_endo] [int] NULL,
+	[num_cells_hucpv] [real] NULL,
+	[unit_cells_hucpv] [int] NULL,
+	[num_cells_islet] [real] NULL,
+	[unit_cells_islet] [int] NULL,
+	[num_cells_mscs] [real] NULL,
+	[unit_cells_mscs] [int] NULL,
+	[num_cells_nk] [real] NULL,
+	[unit_cells_nk] [int] NULL,
+	[num_cells_oligo] [real] NULL,
+	[unit_cells_oligo] [int] NULL,
+	[num_cells_unspmono] [real] NULL,
+	[unit_cells_unspmono] [int] NULL,
+	[inf_cells_othspec] [varchar](255) NULL,
+	[num_cells_oth] [real] NULL,
+	[unit_cells_oth] [int] NULL,
+	[concomitant] [nvarchar](50) NULL,
+	[concomitant_ther1] [varchar](255) NULL,
+	[concomitant_ther2] [varchar](255) NULL,
+	[concomitant_ther3] [varchar](255) NULL,
+	[concomitant_ther4] [varchar](255) NULL,
+	[concomitant_ther5] [varchar](255) NULL,
+	[concomitant_ther6] [varchar](255) NULL,
+	[concomitant_dt1] [datetime] NULL,
+	[concomitant_dt2] [datetime] NULL,
+	[concomitant_dt3] [datetime] NULL,
+	[concomitant_dt4] [datetime] NULL,
+	[concomitant_dt5] [datetime] NULL,
+	[concomitant_dt6] [datetime] NULL,
+	[timestamp] [timestamp] NOT NULL,
+	[ProductID] [int] NULL,
+	[multi_inf] [bit] NULL,
+	[cupnxp] [float] NULL,
+	[cupnxpi] [float] NULL,
+	[inf_date] [datetime] NULL,
+	[inf_num_prod] [int] NULL,
+	[F4006sent] [datetime] NULL,
+ CONSTRAINT [PK_T_4006] PRIMARY KEY CLUSTERED 
+(
+	[InfusionID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
